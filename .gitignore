@@ -212,3 +212,4 @@ postgres_data/
 **dagster_essentials/.env
 **/dagster_essentials/.direnv
 **/dagster_essentials/.envrc
+dbt_project/dbt
