@@ -2,7 +2,7 @@ with raw_yellow_trips as (
     select * from {{ source ('raw', 'yellow_trips')}}
 )
 
-sselect 
+select 
   VendorID,
   tpep_pickup_datetime as pickup_datetime,
   tpep_dropoff_datetime as dropoff_datetime,
