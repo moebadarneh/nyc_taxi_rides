@@ -3,15 +3,15 @@ with raw_yellow_trips as (
 )
 
 select 
-  VendorID,
+  VendorID as vendor_id,
   tpep_pickup_datetime as pickup_datetime,
   tpep_dropoff_datetime as dropoff_datetime,
   passenger_count,
   trip_distance,
-  RatecodeID,
+  RatecodeID as rate_code_id,
   store_and_fwd_flag,
-  PULocationID,
-  DOLocationID,
+  PULocationID as pickup_location_id,
+  DOLocationID as dropoff_location_id,
   payment_type,
   fare_amount,
   extra,

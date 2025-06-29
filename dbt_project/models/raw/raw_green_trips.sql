@@ -1,15 +1,15 @@
-with raw_green_trips as (
+with src_green_trips as (
     select * from {{ source ('raw', 'green_trips')}}
 )
 
 select 
-  VendorID,
+  VendorID as vendor_id,
   lpep_pickup_datetime as pickup_datetime,
   lpep_dropoff_datetime as dropoff_datetime,
   store_and_fwd_flag,
-  RatecodeID,
-  PULocationID,
-  DOLocationID,
+  RatecodeID as rate_code_id,
+  PULocationID as pickup_location_id,
+  DOLocationID as dropoff_location_id,
   passenger_count,
   trip_distance,
   fare_amount,
@@ -24,4 +24,4 @@ select
   trip_type,
   congestion_surcharge,
   partition_date
- from raw_green_trips;
+ from src_green_trips
