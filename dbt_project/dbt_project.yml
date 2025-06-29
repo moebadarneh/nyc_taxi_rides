@@ -44,6 +44,8 @@ models:
       +materialized: ephemeral
     staging:
       +schema: staging
+    core:
+      +schema: core
 
 vars:
   # This is an example of how to set a variable in your dbt project.
