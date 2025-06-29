@@ -44,3 +44,8 @@ models:
       +materialized: ephemeral
     staging:
       +schema: staging
+
+vars:
+  # This is an example of how to set a variable in your dbt project.
+  # You can access this variable in your models, macros, and tests using the `var` function.
+  is_test_run: true

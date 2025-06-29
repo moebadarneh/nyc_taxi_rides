@@ -1,4 +1,4 @@
-with raw_yellow_trips as (
+with src_yellow_trips as (
     select * from {{ source ('raw', 'yellow_trips')}}
 )
 
@@ -23,4 +23,4 @@ select
   congestion_surcharge,
   airport_fee,
   partition_date
- from raw_yellow_trips;
+ from src_yellow_trips
