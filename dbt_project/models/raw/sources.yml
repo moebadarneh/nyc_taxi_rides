@@ -7,3 +7,4 @@ sources:
     tables:
       - name: green_trips
       - name: yellow_trips
+      - name: zones
